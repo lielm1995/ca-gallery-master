@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <title>Minesweeper</title>
+</head>
+
+<body onload="initGame()">
+
+    <div class="header">
+        <h1>Minesweeper</h1>
+    </div>
+    <div>
+        <div class="container">
+            <div class="timer">
+                00:00
+            </div>
+            <div class="hints">
+            </div>
+            
+            <button class="smiley emoji" onmousedown="mouseDown()" onmouseup="mouseUp()" onclick="initGame()">🙂</button>
+            <div class="board">
+
+            </div>
+
+           
+            
+            <div class="lives">
+                
+            </div>
+            
+            <div >
+                <button class="safe-click styled-button" onclick="getSafeCell()">Safe Click! (3 left)</button>
+                
+            </div>
+            
+
+            <div class="buttons">
+                
+                
+                
+                <span class="mine emoji"></span>
+                <span class="flag emoji"></span>
+                <br />
+                <button class="level styled-button" onclick="changeLevel('easy')">Easy</button><!--
+                --><button class="level styled-button" onclick="changeLevel('hard')">Hard</button><!--
+                --><button class="level styled-button" onclick="changeLevel('extreme')">Extreme</button>
+                <button class="manually styled-button" onclick="manuallyCreate()">Manually place mines</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+         By Liel Malihi &copy;
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
